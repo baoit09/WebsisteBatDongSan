@@ -1,0 +1,41 @@
+﻿ 2016-11-24 01:01:25,643 [P5760/D15/T126] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-11-23 01:01:25
+ 2016-11-24 06:31:41,308 [P5760/D15/T94] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-11-23 06:31:41
+ 2016-11-24 06:31:54,175 [P5760/D15/T122] ERROR Umbraco.Web.Scheduling.KeepAlive - Failed (at "http://baotqpc.ddns.net:80/umbraco").
+System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'baotqpc.ddns.net'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Umbraco.Web.Scheduling.KeepAlive.<PerformRunAsync>d__4.MoveNext()
+ 2016-11-24 06:32:16,245 [P5760/D15/T52] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://baotqpc.ddns.net:80/umbraco").
+System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'baotqpc.ddns.net'
+   at System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   at System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__5.MoveNext()
+ 2016-11-24 15:01:22,370 [P5760/D15/T94] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-11-23 15:01:22
+ 2016-11-24 15:01:22,410 [P5760/D15/T22] ERROR Umbraco.Web.Scheduling.KeepAlive - Failed (at "http://baotqpc.ddns.net:80/umbraco").
+System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'baotqpc.ddns.net'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Umbraco.Web.Scheduling.KeepAlive.<PerformRunAsync>d__4.MoveNext()
+ 2016-11-24 21:05:37,125 [P5760/D15/T94] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-11-23 21:05:37
+ 2016-11-24 21:05:37,709 [P5760/D15/T8] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://baotqpc.ddns.net:80/umbraco").
+System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'baotqpc.ddns.net'
+   at System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   at System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__5.MoveNext()
+ 2016-11-24 21:05:40,252 [P5760/D15/T131] ERROR Umbraco.Web.Scheduling.KeepAlive - Failed (at "http://baotqpc.ddns.net:80/umbraco").
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Umbraco.Web.Scheduling.KeepAlive.<PerformRunAsync>d__4.MoveNext()

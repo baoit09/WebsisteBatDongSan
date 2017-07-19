@@ -1,0 +1,278 @@
+﻿/* ================ Start Content ===============*/
+#content {
+    width: 700px;
+    float: left;
+}
+
+#rightSide {
+    float: left;
+    margin-left: 10px;
+    width:298px;
+}
+
+#newestProject ul li {
+    margin-bottom: 20px;
+}
+
+#newestProject .thumbnail {
+    float: left;
+}
+
+#newestProject .detail {
+    float: left;
+    margin-left: 10px;
+    width: 200px;
+}
+
+/* ================ End Content ===============*/
+
+/* ================ Du an ===============*/
+#content .category_headline {
+    width: 100%;
+}
+
+#project .thumbnail {
+    margin-bottom: 6px;
+}
+
+#project ul.items li {
+    float: left;
+    margin-bottom: 20px;
+    width: 222px;
+}
+
+    #project ul.items li.center {
+        margin-left: 17px;
+        margin-right: 17px;
+    }
+/* ================ End Du an ===============*/
+
+/* ================ Start Sponsor ===============*/
+#jcarousel_wrapper {
+    margin: 20px auto;
+    position: relative;
+}
+
+#jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 1008px;
+}
+
+    #jcarousel ul {
+        width: 20000em;
+        position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #jcarousel li {
+        float: left;
+        margin-right: 20px;
+        border: 1px solid #e9e5e5;
+    }
+/* ================ End Sponsor ===============*/
+
+/* ================ Start Paging ================*/
+.pagingWrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.paging {
+    text-align: center;
+}
+
+    .paging li {
+        display: inline-block;
+    }
+
+        .paging li.sumary {
+            padding-right: 10px;
+        }
+
+        .paging li.number {
+            background-color: #e8e8e8;
+            color: #929191;
+            font-weight: bold;
+            font-size: 13px;
+            text-align: center;
+            border: 1px solid #d5d2d2;
+            border-radius: 5px;
+        }
+
+        .paging li.selected {
+            background-color: #f2f2f2;
+        }
+
+        .paging li.number a {
+            font-size: 10px;
+            color: #929191;
+            display: block;
+            line-height: 24px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .paging li.selected a {
+            color: #515954;
+        }
+/* ================ End Paging ================ */
+
+/* ================ Start Chi tiet du an ================*/
+#project_detail h3.title {
+    color: #0054a6;
+    font-size: 18px;
+}
+
+#project_detail .thumbnail {
+    float: left;
+    width: 486px;
+}
+
+#project_detail .info {
+    float: left;
+    width: 180px;
+    margin-left: 20px;
+}
+
+#project_detail .address {
+    color: #333;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+    #project_detail .address span {
+        color: #000;
+        font-weight: bold;
+    }
+
+.sub_menu ul {
+    float: left;
+    width: 696px;
+    background: #e3f2fc;
+}
+
+    .sub_menu ul li {
+        list-style: none;
+        margin-right: 1px;
+        display: inline;
+        float: left;
+    }
+
+        .sub_menu ul li a {
+            padding: 11px 12px 12px 12px !important;
+            color: #4c9ac9;
+            font-size: 14px;
+            font-weight: bold;
+            clear: both;
+            display: block;
+        }
+
+            .sub_menu ul li a.current, .sub_menu ul li a:hover {
+                padding: 11px 12px 12px 12px !important;
+                background: #9fc71c;
+                color: #fff;
+            }
+
+.tabContent {
+    display: none;
+}
+
+#projectDetail {
+    margin-top: 10px;
+}
+/* ================ End Chi tiet du an ================ */
+
+
+/* ================ Start Tin tuc ================ */
+#news .thumbnail {
+    float:left;
+}
+#news .content {
+    float:left;
+    width: 520px;
+    margin-left:10px;
+}
+#news .content .description{
+    color:#666;
+}
+#news ul li .line{
+    margin-top: 8px;
+    margin-bottom: 14px;
+}
+/* ================ End Tin tuc ================ */
+
+/* ================ Start Chi tiet Tin tuc ================ */
+#newsDetail h3.title{
+    color:#0054a6;
+    font-size:18px;
+}
+#newsDetail .otherNews_title{
+    font-weight:bold;
+    color:#26ae90;
+    font-size:12pt;
+    margin-left:10px;
+    margin-top:10px;
+
+}
+
+#newsDetail .otherNews ul
+{
+    list-style:disc;
+    margin-left:50px;
+
+}
+#newsDetail .otherNews li, #newsDetail .otherNews a{
+    color:#0054a6;
+    font-weight:bold;
+}
+#newsDetail .otherNews a:hover{
+   text-decoration: underline;
+}
+/* ================ End Chi tiet Tin tuc ================ */
+
+/* ================ Start Lien he ================ */
+#contact_wrapper{
+    line-height:1.8em;
+}
+#contact_wrapper .contact_info{
+    color:#333;
+}
+#contact_wrapper .contact_info span{
+    font-weight:bold;
+}
+
+#contact_wrapper .contact_form{
+    width: 400px;
+}
+#contact_wrapper .contact_form .textbox {
+    width: 100%;
+    height:30px;
+    padding-left:10px;
+    padding-right:10px;
+}
+#contact_wrapper .contact_form .contact_line{
+    margin-bottom:5px;
+}
+#contact_wrapper .contact_form .textarea {
+    width: 100%;
+    height:80px;
+}
+#contact_wrapper .contact_form .textarea {
+    width: 100%;
+    height:80px;
+    padding-left:10px;
+    padding-right:10px;
+}
+#contact_wrapper .contact_form .contact_submit
+{
+    float: right;
+    background:#00b7f1;
+    color:#fff;
+    width:60px;
+    border: 0;
+    cursor: pointer;
+}
+/* ================ End Lien he ================ */

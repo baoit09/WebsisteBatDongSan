@@ -1,0 +1,32 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+}
+
+@{
+    var currentNode = UmbracoContext.Current.PublishedContentRequest.PublishedContent;
+    var otherNews = currentNode.Siblings().Where(i => i.Id != currentNode.Id).Take(6);
+}
+<div class="category_headline">
+    <a href="javascript:void(0)" title="Tin tức">
+        <h2>Tin tức</h2>
+        <span></span>
+    </a>
+</div>
+
+<div id="newsDetail">
+    <h3 class="title">@currentNode.Name</h3>
+    <div class="content">
+        @(Html.Raw(currentNode.GetPropertyValue<string>("noiDung")))
+    </div>
+    <div class="otherNews">
+        <div class="otherNews_title">Tin tức khác</div>
+        <ul>
+            @foreach (var item in otherNews)
+            {
+                <li><a href="@item.Url">@item.Name</a></li>
+            }
+        </ul>
+    </div>
+
+</div>

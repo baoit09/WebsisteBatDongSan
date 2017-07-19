@@ -1,0 +1,117 @@
+﻿/* ================ Start General ===============*/
+
+.clearfix {
+    clear: both;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+#wrapper {
+    width: 1008px;
+    margin: 0 auto;
+}
+
+.category_headline {
+    background: #fafafa;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #e5e5e5;
+    height: 35px;
+    width: 296px;
+    margin-bottom: 15px;
+}
+
+    .category_headline a {
+        display: inline-block;
+        background: #00b7f1;
+        -webkit-border-radius: 3px 0 0 3px;
+        -moz-border-radius: 3px 0 0 3px;
+        border-radius: 3px 0 0 3px;
+        padding: 0 20px 0 15px;
+        height: 36px;
+        margin-top: -1px;
+        position: relative;
+        text-decoration: none;
+    }
+
+        .category_headline a h2 {
+            font-size: 18px;
+            line-height: 36px;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+            font-weight: bold;
+            color: #fff;
+            padding: 0;
+            margin: 0;
+        }
+
+        .category_headline a span {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            margin-left: 2px;
+            vertical-align: middle;
+            border-top: 18px solid transparent;
+            border-left: 13px solid #00b7f1;
+            border-right: 0 solid transparent;
+            border-bottom: 18px solid transparent;
+            position: absolute;
+            top: 0;
+            right: -12px;
+        }
+
+.title a {
+    font-size: 14px;
+    color: #0054a6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.price {
+    color: #ff8a01;
+    font-weight: bold;
+}
+
+.square {
+    color: #81b228;
+    font-weight: bold;
+}
+
+.address {
+    color: #333;
+}
+
+.link {
+    color: #00b7f1;
+}
+.link:hover {
+    text-decoration: underline;
+}
+/* ================ End General ===============*/
+
+.scrollToTop{
+	width:100px; 
+	height:130px;
+	padding:10px; 
+	text-align:center; 
+	background: whiteSmoke;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	position:fixed;
+	bottom:5px;
+	right:5px;
+	display:none;
+	background: url('../images/arrow_up.png') no-repeat 0px 20px;
+}
+.scrollToTop:hover{
+	text-decoration:none;
+}

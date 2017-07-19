@@ -1,0 +1,38 @@
+﻿ 2016-11-25 04:03:00,131 [P5760/D15/T6] ERROR Umbraco.Web.Scheduling.KeepAlive - Failed (at "http://baotqpc.ddns.net:80/umbraco").
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Umbraco.Web.Scheduling.KeepAlive.<PerformRunAsync>d__4.MoveNext()
+ 2016-11-25 04:03:01,416 [P5760/D15/T94] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-11-24 04:03:00
+ 2016-11-25 23:00:43,934 [P5908/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.4.3 application starting on BAOTQ-PC
+ 2016-11-25 23:00:45,343 [P5908/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-11-25 23:00:45,444 [P5908/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 101ms)
+ 2016-11-25 23:00:46,286 [P5908/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-11-25 23:00:46,881 [P5908/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 594ms)
+ 2016-11-25 23:00:47,356 [P5908/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2016-11-25 23:00:47,359 [P5908/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 3ms)
+ 2016-11-25 23:00:47,360 [P5908/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2016-11-25 23:00:47,361 [P5908/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 1ms)
+ 2016-11-25 23:00:47,483 [P5908/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2016-11-25 23:00:47,519 [P5908/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 36ms)
+ 2016-11-25 23:00:47,520 [P5908/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2016-11-25 23:00:47,549 [P5908/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 29ms)
+ 2016-11-25 23:00:48,555 [P5908/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2016-11-25 23:00:48,556 [P5908/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 1ms)
+ 2016-11-25 23:00:48,556 [P5908/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2016-11-25 23:00:48,558 [P5908/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 1ms)
+ 2016-11-25 23:01:02,500 [P5908/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-11-25 23:01:09,953 [P5908/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-11-25 23:01:09,979 [P5908/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-11-25 23:01:12,304 [P5908/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2016-11-25 23:01:13,291 [P5908/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2016-11-25 23:01:14,634 [P5908/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2016-11-25 23:01:15,219 [P5908/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 32691ms)
+ 2016-11-25 23:04:02,712 [P5908/D2/T13] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://baotqpc.ddns.net:80/umbraco (UmbracoModule request)
+ 2016-11-25 23:04:23,726 [P5908/D2/T13] INFO  umbraco.content - Load Xml from file...
+ 2016-11-25 23:04:24,962 [P5908/D2/T13] INFO  umbraco.content - Loaded Xml from file.
+ 2016-11-25 23:05:24,914 [P5908/D2/T13] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-11-25 23:05:24,918 [P5908/D2/T13] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 3ms)
+ 2016-11-25 23:05:32,653 [P5908/D2/T19] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-11-24 23:05:28
+ 2016-11-25 23:05:40,137 [P5908/D2/T24] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2016-11-25 23:05:40,139 [P5908/D2/T24] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 1ms)

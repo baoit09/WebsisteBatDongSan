@@ -1,0 +1,60 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+}
+
+<div class="category_headline">
+    <a href="javascript:void(0)" title="Liên hệ">
+        <h2>Liên hệ</h2>
+        <span></span>
+    </a>
+</div>
+
+<div id="contact_wrapper">
+    <div class="contact_info">
+        <div><span>Địa chỉ:    </span>S31 Tôn Thất Thuyết, Phường 18, Quận 4, TP.HCM</div>
+        <div><span>Điện thoại: </span>0938 07 94 50</div>
+        <div><span>Email:      </span><a href="mailto:quocbao_it09@yahoo.com" class="link">quocbao_it09@yahoo.com</a></div>
+        <div><span>Webiste:    </span><a href="http://bdsquocbao.com.vn" class="link">bdsquocbao.com.vn</a></div>
+    </div>
+    <div class="contact_form">
+        @using (Html.BeginForm())
+        {
+            <div class="contact_line">
+                <input type="text" class="textbox" name="fullName" id="fullName" placeholder="Họ và Tên (*)" />
+            </div>
+            <div class="contact_line">
+                <input type="text" class="textbox" name="phone" id="phone" placeholder="Điện thoại (*)" />
+            </div>
+            <div class="contact_line">
+                <input type="text" class="textbox" name="email" id="email" placeholder="Email (*)" />
+            </div>
+            <div class="contact_line">
+                <input type="text" class="textbox" name="address" id="address" placeholder="Địa chỉ (*)" />
+            </div>
+            <div class="contact_line">
+                <textarea type="text" class="textarea" name="message" id="message" placeholder="Nội dung (*)"></textarea>
+            </div>
+            <div class="contact_line">
+                <input type="submit" class="contact_submit" name="submit" value="Gửi" onclick="return Validation();" />
+            </div>
+        }
+    </div>
+</div>
+
+<script type="text/javascript">
+    function Validation()
+    {
+        if ($.trim($("#fullName").val()).length === 0
+            || $.trim($("#phone").val()).length === 0
+            || $.trim($("#email").val()).length === 0
+            || $.trim($("#address").val()).length === 0
+            || $.trim($("#message").val()).length === 0)
+        {
+            alert("Vui lòng nhập thông tin");
+            return false;
+        }
+        return true;
+    }
+</script>
+

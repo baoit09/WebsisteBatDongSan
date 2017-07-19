@@ -1,0 +1,64 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+}
+
+@{
+    var currentNode = UmbracoContext.Current.PublishedContentRequest.PublishedContent;
+    var galleryArray = currentNode.GetPropertyValue<string>("gallery").Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+    var tabs = currentNode.Children;
+    var firstContent = String.Empty;
+}
+
+<div class="category_headline">
+    <a href="javascript:void(0)" title="Dự án">
+        <h2>Dự án</h2>
+        <span></span>
+    </a>
+</div>
+<div id="project_detail">
+    <h3 class="title">@currentNode.Name</h3>
+    <div class="address"><span>Địa chỉ:</span> @(currentNode.GetPropertyValue<string>("diaChi"))</div>
+    <div class="content">
+        <div class="thumbnail">
+            <ul id="myGalleryProject">
+                @foreach (var id in galleryArray)
+                {
+                    var image = Umbraco.TypedMedia(id);
+                    var url = String.Empty;
+                    if (image != null)
+                    {
+                        url = image.Url;
+                    }
+
+                    <li><img src="@url" width="486" /></li>
+                }
+            </ul>
+        </div>
+        <div class="info">
+            @(currentNode.GetPropertyValue<string>("moTa"))
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<div class="sub_menu">
+    <ul>
+        @foreach (var tab in tabs)
+        {
+            if (tabs.IndexOf(tab) == 0)
+            {
+                firstContent = tab.GetPropertyValue<string>("noiDung");
+            }
+            <li>
+                <a class="tabButton @(tabs.IndexOf(tab) == 0 ? "current" : "")" href="javascript:void(0)">@tab.Name</a>
+                <div class="tabContent">
+                    @(Html.Raw(tab.GetPropertyValue<string>("noiDung")))
+                </div>
+            </li>
+        }
+    </ul>
+    <div class="clearfix"></div>
+</div>
+<div id="projectDetail">
+    @(Html.Raw(firstContent))
+</div>

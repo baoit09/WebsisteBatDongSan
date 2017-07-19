@@ -1,0 +1,40 @@
+﻿ 2017-01-11 10:51:35,711 [P5200/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.4.3 application starting on BAOTQ-PC
+ 2017-01-11 10:51:36,769 [P5200/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-01-11 10:51:36,864 [P5200/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 95ms)
+ 2017-01-11 10:51:37,441 [P5200/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2017-01-11 10:51:37,914 [P5200/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 472ms)
+ 2017-01-11 10:51:38,117 [P5200/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-01-11 10:51:38,120 [P5200/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 2ms)
+ 2017-01-11 10:51:38,122 [P5200/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-01-11 10:51:38,124 [P5200/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 2ms)
+ 2017-01-11 10:51:38,236 [P5200/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2017-01-11 10:51:38,277 [P5200/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 40ms)
+ 2017-01-11 10:51:38,278 [P5200/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2017-01-11 10:51:38,303 [P5200/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 25ms)
+ 2017-01-11 10:51:39,294 [P5200/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2017-01-11 10:51:39,295 [P5200/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 0ms)
+ 2017-01-11 10:51:39,295 [P5200/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2017-01-11 10:51:39,296 [P5200/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 0ms)
+ 2017-01-11 10:51:45,441 [P5200/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-01-11 10:51:48,915 [P5200/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-01-11 10:51:48,934 [P5200/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-01-11 10:51:49,827 [P5200/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-01-11 10:51:50,090 [P5200/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-01-11 10:51:51,552 [P5200/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-01-11 10:51:51,711 [P5200/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 17322ms)
+ 2017-01-11 10:52:09,266 [P5200/D2/T6] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://t4.liverail.com:80/umbraco (UmbracoModule request)
+ 2017-01-11 10:52:12,719 [P5200/D2/T6] INFO  umbraco.content - Load Xml from file...
+ 2017-01-11 10:52:12,847 [P5200/D2/T6] INFO  umbraco.content - Loaded Xml from file.
+ 2017-01-11 10:52:20,103 [P5200/D2/T6] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-01-11 10:52:20,106 [P5200/D2/T6] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 3ms)
+ 2017-01-11 10:53:14,006 [P5200/D2/T16] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-01-10 10:53:13
+ 2017-01-11 10:53:17,470 [P5200/D2/T17] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-01-11 10:53:17,471 [P5200/D2/T17] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 1ms)
+ 2017-01-11 12:45:38,992 [P5200/D2/T89] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://t4.liverail.com:80/umbraco").
+System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 't4.liverail.com'
+   at System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   at System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__5.MoveNext()

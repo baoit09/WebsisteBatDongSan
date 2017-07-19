@@ -1,0 +1,96 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+}
+@{
+    var currentNode = UmbracoContext.Current.PublishedContentRequest.PublishedContent;
+    var projects = currentNode.Children;
+
+    const int pageSize = 6;
+    int page = 1;
+
+    if (!int.TryParse(Request["page"], out page))
+    {
+        page = 1;
+    }
+
+    int totalNodes = projects.Count();
+    int totalPages = (int)Math.Ceiling((double)totalNodes / pageSize);
+
+    if (page > totalPages)
+    {
+        page = totalPages;
+    }
+    else if (page < 1)
+    {
+        page = 1;
+    }
+
+    var listItems = projects.Skip((page - 1) * pageSize).Take(pageSize).ToList();
+}
+
+<div class="category_headline">
+    <a href="javascript:void(0)" title="Dự án">
+        <h2>Dự án</h2>
+        <span></span>
+    </a>
+</div>
+<div id="project">
+    <ul class="items">
+        @foreach (var item in listItems)
+        {
+            var thumbnail = Umbraco.TypedMedia(item.GetPropertyValue<int>("thumbnail"));
+            var url = String.Empty;
+            if (thumbnail != null)
+            {
+                url = thumbnail.Url;
+            }
+
+            <li class="@(projects.IndexOf(item) % 3 == 1 ? "center" : "")">
+                <div class="thumbnail"><a href="@item.Url"><img src="@url" width="222" height="117" /></a></div>
+                <div class="title"><a href="@item.Url">@item.Name</a></div>
+                <div class="address">@(item.GetPropertyValue<string>("diaChi"))</div>
+                <div class="price">Giá: @(item.GetPropertyValue<string>("gia")) triệu</div>
+                <div class="square">Diện tích: @(item.GetPropertyValue<string>("dienTich")) m2</div>
+            </li>
+        }
+    </ul>
+    <div class="clearfix"></div>
+
+    @if (totalPages > 1)
+    {
+        const int itemsPerGroup = 8;
+        var currentGroup = (int)Math.Ceiling((double)page / itemsPerGroup);
+        int startItem = (currentGroup - 1) * itemsPerGroup;
+        int endItem = startItem + itemsPerGroup;
+        if (endItem > totalPages)
+        {
+            endItem = totalPages;
+        }
+        <div class="pagingWrapper">
+            <ul class="paging">
+                @if (page > 1)
+                {
+                    <li class="number"><a href="?page=@(page -1)" title="@(page -1)"><<</a></li>
+                }
+                @for (int p = startItem; p < endItem; p++)
+                {
+                    string seleted = (p + 1 == page) ? "seleted" : String.Empty;
+                    if (seleted.Trim().Length != 0)
+                    {
+                        <li class="number @seleted"><a href="javascript:void(0);" title="@(p + 1)">@(p + 1)</a></li>
+                    }
+                    else
+                    {
+                        <li class="number @seleted"><a href="?page=@(p + 1)" title="@(p + 1)">@(p + 1)</a></li>
+                    }
+                }
+                @if (page < totalPages)
+                {
+                    <li class="number"><a href="?page=@(page +1)" title="@(page +1)">>></a></li>
+                }
+            </ul>
+
+        </div>
+    }
+</div>
